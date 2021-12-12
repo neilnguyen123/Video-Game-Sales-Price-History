@@ -9,6 +9,8 @@ In order, how the files should be opened:
       > Data prep for modeling
 
 
+Obtained top 500 games to scape through
+<img width="585" alt="Screen Shot 2021-12-12 at 11 27 20 AM" src="https://user-images.githubusercontent.com/85441922/145722801-dfaf421e-5126-4d7e-82a8-445611a03007.png">
 
    
  
