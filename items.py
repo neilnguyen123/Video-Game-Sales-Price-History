@@ -13,4 +13,6 @@ class IsthereanydealItem(scrapy.Item):
     game_date = scrapy.Field()
     game_regular_price = scrapy.Field()
     game_actual_price = scrapy.Field()
+    sale_duration = scrapy.Field()
+    game_release_date = scrapy.Field()
     pass

@@ -28,12 +28,16 @@ class IsthereanydealSpiderSpider(scrapy.Spider):
         game_date = response.css('.lg2__time-rel::text').extract()
         game_regular_price = response.css('.show-801+ .lg2__price').css('::text').extract()
         game_actual_price = response.css('.lg2__price--new::text').extract()
+        sale_duration = response.css('.lg2__time-rel i::text').extract()
+        game_release_date = response.css('#gameHead__release').extract()
 
         items['game_title'] = game_title
         items['game_store_name'] = game_store_name
         items['game_date'] = game_date
         items['game_regular_price'] = game_regular_price
         items['game_actual_price'] = game_actual_price
+        items['sale_duration'] = sale_duration
+        items['game_release_date'] = game_release_date
 
         # Ensures all items are running properly
         yield items
